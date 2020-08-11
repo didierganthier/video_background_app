@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
               SizedBox.expand(
                 child: FittedBox(
-                  fit: BoxFit.fill,
+                  fit: BoxFit.cover,
                   child: SizedBox(
                     width: _controller.value.size?.width?? 0,
                     height: _controller.value.size?.height?? 0,
@@ -72,7 +72,7 @@ class LoginWidget extends StatelessWidget {
         Container(
           child: Center(
             child: Image(
-              image: AssetImage("assets/coffee_logo.png"),
+              image: AssetImage("assets/wink.png"),
               width: 200.0,
             ),
           ),
