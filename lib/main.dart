@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
@@ -29,7 +30,19 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+      home: SafeArea(
+        child: Scaffold(
+          body: Stack(
+            children: <Widget>[
+              SizedBox.expand(
+                child: FittedBox(
+                  fit: BoxFit.fill,
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
