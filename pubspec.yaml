@@ -49,6 +49,7 @@ flutter:
   assets:
     - assets/footage_sunset.mp4
     - assets/sunset.mp4
+    - assets/wink.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
