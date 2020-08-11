@@ -37,6 +37,11 @@ class _MyAppState extends State<MyApp> {
               SizedBox.expand(
                 child: FittedBox(
                   fit: BoxFit.fill,
+                  child: SizedBox(
+                    width: _controller.value.size?.width?? 0,
+                    height: _controller.value.size?.height?? 0,
+                    child: VideoPlayer(_controller),
+                  ),
                 ),
               )
             ],
